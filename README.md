@@ -9,7 +9,7 @@ The target performance threshold is an F1 score of at least `0.85`, with a prefe
 The notebook evaluates several classic NLP approaches for binary text classification and compares them against a simple business benchmark. The final deliverable is not just the best score, but a model recommendation that balances performance and operational simplicity.
 
 Main asset:
-- Notebook: [Proyecto 16.ipynb](C:/Users/Asus/Desktop/Proyectos%20Tripleten/Proyecto%2016.ipynb)
+- Notebook: [notebooks/imdb_sentiment_classification.ipynb](notebooks/imdb_sentiment_classification.ipynb)
 
 ## Methodology
 The workflow follows a business-oriented modeling pipeline:
@@ -65,14 +65,15 @@ The original dataset used in this project, `imdb_reviews.tsv`, was provided thro
 Because of that, the notebook cannot be executed end-to-end unless the dataset is supplied locally.
 
 ### Expected dataset locations
-The notebook is configured to look for the dataset in the following locations:
+The notebook is configured to look for the dataset in these portable locations:
 
-1. `C:\Users\Asus\Desktop\Proyectos Tripleten\imdb_reviews.tsv`
-2. `C:\Users\Asus\Desktop\Proyectos Tripleten\data\imdb_reviews.tsv`
+1. `data/imdb_reviews.tsv`
+2. `imdb_reviews.tsv`
 3. `/datasets/imdb_reviews.tsv`
-4. `C:\datasets\imdb_reviews.tsv`
 
-If you want to run the notebook locally, place the file in any one of those paths.
+If you want to run the notebook locally, place the file in any one of those locations. The recommended option for this repository is:
+
+- `data/imdb_reviews.tsv`
 
 ## Dependencies
 The notebook requires the following Python packages:
